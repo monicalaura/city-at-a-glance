@@ -44,7 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 15px; /* Adjust the margin as needed */
+  margin-top: 15px; 
 }
 .info {
   margin-top: 2em;
