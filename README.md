@@ -1,6 +1,6 @@
 # City@AGlance (work in progress)
 
-## Developer
+## Developed by:
 Monica Laura Burns
 
 ## TO DO: 
