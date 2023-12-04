@@ -36,9 +36,10 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 - Tolerance
 - Outdoors
 
- ### NOTE: Data from the Teleport API may not be available for some cities. 
 
 ![screenshot-city-info](https://github.com/monicalaura/city-at-a-glance/assets/58688612/b1ed2b27-9832-44a5-b6ec-88c599ef200c)
+
+### NOTE: Data from the Teleport API may not be available for some cities. 
 
 
 ### Weather Forecast
