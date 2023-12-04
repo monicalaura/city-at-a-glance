@@ -1,3 +1,54 @@
+# City@AGlance (work in progress)
+
+## Developer
+Developed by: Monica Laura Burns
+
+## TO DO: 
+Show the cities that users have marked as favorites on the Favorites page.
+
+## General Description
+City@AGlance is a user-friendly web application developed in Next.js and MongoDB, that provides comprehensive information about cities worldwide. 
+
+## Key Features
+
+### City Information
+
+- **Country:** Discover the country to which the city belongs.
+- **Timezone:** Know the timezone of the city for convenient planning.
+- **Population:** Get insights into the city's population, providing context to its size 
+- **Elevation:** Learn about the city's elevation above sea level.
+- **General Score 0/100:** 
+                  This gives user a quick take on how cool a city is to live in. 
+                  The score is like a snapshot that considers everything, so you don't have to dive into all the details.
+
+### Quality of Life Scores 0/10
+
+- Housing
+- Cost of Living
+- Safety
+- Healthcare
+- Education
+- Internet Access
+- Economy
+- Leisure & Culture
+- Tolerance
+- Outdoors
+
+
+### Weather Forecast
+
+Access a 7-day weather forecast, complete with hourly breakdowns. 
+
+### Interactive Map
+
+Visualize the city's location on an interactive map. Users can explore the surrounding areas and gain a spatial understanding of the city's geography.
+
+### Favorites List
+
+Users can save cities to a personalized favorites list for quick access. 
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

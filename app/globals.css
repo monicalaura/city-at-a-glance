@@ -16,6 +16,7 @@
   }
 }
 
+/*
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -25,3 +26,74 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+*/
+
+/* CUSTOM CSS */
+
+.generic {
+  margin-top: 2em
+}
+
+.head-text {
+  margin-top: -1em;
+}
+
+.left,
+.left1,
+.left2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px; /* Adjust the margin as needed */
+}
+.info {
+  margin-top: 2em;
+}
+
+.title {
+  font-size: 1.7em
+}
+
+.label {
+font-weight: bold;
+}
+.scores {
+  margin-bottom:2em
+}
+p.weather {
+  font-size: 1.3em !important;
+  margin-top:2em
+}
+
+#map {
+  margin-top: 3em;
+}
+
+/* Media query for larger screens (desktop) */
+@media (min-width: 1024px) {
+
+  .head-text {
+    margin-top: 2em;
+  }
+  
+  #teleport-widget-container{
+    margin-left: 6.5em;
+  }
+
+  p.weather {
+    font-size: 1.7em !important;
+    margin-top:3em
+  }
+
+  .title {
+    margin-top: 1.5em;
+    margin-bottom:0.4em;
+    font-size:3em !important;
+  }
+
+  .description {
+    margin-bottom: 1.5em
+  }
+  
+}
+
