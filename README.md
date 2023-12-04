@@ -17,9 +17,8 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 - **Timezone:** Know the timezone of the city for convenient planning.
 - **Population:** Get insights into the city's population, providing context to its size 
 - **Elevation:** Learn about the city's elevation above sea level.
-- **General Score 0/100:** 
-                  This gives user a quick take on how cool a city is to live in. 
-                  The score is like a snapshot that considers everything, so you don't have to dive into all the details.
+- **General Score 0/100:**    This gives users a quick take on how cool a city is to live in. 
+               
 
 ### Quality of Life Scores 0/10
 
