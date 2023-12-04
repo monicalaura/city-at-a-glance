@@ -57,9 +57,10 @@ Visualize the city's location on an interactive map. Users can explore the surro
 Users can save cities to a personalized favorites list for quick access. 
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 Use your db credentials in the generic .env file.
 
