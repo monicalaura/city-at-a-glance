@@ -16,11 +16,11 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 
 ### City Information
 
-- **Country:** Discover the country to which the city belongs.
-- **Timezone:** Know the timezone of the city for convenient planning.
-- **Population:** Get insights into the city's population, providing context to its size 
-- **Elevation:** Learn about the city's elevation above sea level.
-- **General Score 0/100:**    This gives users a quick take on how cool a city is to live in. 
+- **Country:** The country to which the city belongs.
+- **Timezone:** The timezone of the city.
+- **Population:** The size of the city's population.
+- **Elevation:** The city's elevation above sea level.
+- **General Score 0/100:** A quick take on how cool a city is to live in. 
                
 
 ### Quality of Life Scores 0/10
@@ -36,7 +36,7 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 - Tolerance
 - Outdoors
 
- ### Data from the Teleport API may not be available for some cities. 
+ ### NOTE: Data from the Teleport API may not be available for some cities. 
 
 ![screenshot-city-info](https://github.com/monicalaura/city-at-a-glance/assets/58688612/b1ed2b27-9832-44a5-b6ec-88c599ef200c)
 
