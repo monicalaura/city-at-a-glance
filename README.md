@@ -36,6 +36,8 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 - Tolerance
 - Outdoors
 
+![screenshot-city-info](https://github.com/monicalaura/city-at-a-glance/assets/58688612/b1ed2b27-9832-44a5-b6ec-88c599ef200c)
+
 
 ### Weather Forecast
 
@@ -45,10 +47,12 @@ Access a 7-day weather forecast, complete with hourly breakdowns.
 
 Visualize the city's location on an interactive map. Users can explore the surrounding areas and gain a spatial understanding of the city's geography.
 
+![screenshot-city-weather-map](https://github.com/monicalaura/city-at-a-glance/assets/58688612/bc825295-4e00-4ad0-a0d1-647181ee8463)
+
+
 ### Favorites List
 
 Users can save cities to a personalized favorites list for quick access. 
-
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
