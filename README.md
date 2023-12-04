@@ -48,8 +48,7 @@ Access a 7-day weather forecast, complete with hourly breakdowns.
 
 ### Interactive Map
 
-Visualize the city's location on an interactive map. Users can explore the surrounding areas and gain a spatial understanding of the city's geography.
-
+Visualize the city's location on the map. 
 ![screenshot-city-weather-map](https://github.com/monicalaura/city-at-a-glance/assets/58688612/bc825295-4e00-4ad0-a0d1-647181ee8463)
 
 
