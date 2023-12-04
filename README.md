@@ -9,6 +9,9 @@ Show the cities that users have marked as favorites on the Favorites page.
 ## General Description
 City@AGlance is a user-friendly web application developed in Next.js and MongoDB, that provides comprehensive information about cities worldwide. 
 
+![screenshot-city-app](https://github.com/monicalaura/city-at-a-glance/assets/58688612/748a225e-7469-41d9-972b-35c1caa22179)
+
+
 ## Key Features
 
 ### City Information
