@@ -1,7 +1,7 @@
 # City@AGlance (work in progress)
 
 ## Developer
-Developed by: Monica Laura Burns
+Monica Laura Burns
 
 ## TO DO: 
 Show the cities that users have marked as favorites on the Favorites page.
