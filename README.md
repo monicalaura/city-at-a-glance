@@ -33,7 +33,8 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 - Tolerance
 - Outdoors
 
-![scores](https://github.com/monicalaura/city-at-a-glance/assets/58688612/1b18fe15-4e21-4293-889e-951640a0bf61)
+
+![scores](https://github.com/monicalaura/city-at-a-glance/assets/58688612/a6306a36-bed7-4fef-9dad-5675c9fa0bb0)
 
 
 ### Weather Forecast
