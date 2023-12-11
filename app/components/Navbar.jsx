@@ -6,6 +6,7 @@ import { FaBars as HamburgerIcon, FaTimes as CloseIcon } from 'react-icons/fa';
 
 const Links = [
   { href: '/', name: 'Home' },
+  { href: '/city', name: 'Search' },
   { href: '/city', name: 'City' },
   { href: '/favorites', name: 'Favorites' },
 ];
@@ -27,14 +28,14 @@ export default function Navbar() {
             className="text-2xl text-brand-accent md:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <div className="text-sm text-brand-accent block md:hidden sm:flex text-right mb-1">
-              CITY@AGlance
+            <div className="text-brand-accent block md:hidden sm:flex text-right mb-1 logo-mob">
+            <Link href="/"> CITY@AGlance </Link>
             </div>
 
             {isOpen ? <CloseIcon /> : <HamburgerIcon />}
           </button>
           <div className="text-xl text-brand-accent hidden md:flex">
-            CITY@AGlance
+          <Link href="/"> CITY@AGlance </Link>
           </div>
           <div className="hidden md:flex">
             {Links.map((link) => (

@@ -1,17 +1,36 @@
-import React from 'react';
+'use client'
 
-
-export const metadata = {
-  title: 'Favorite cities',
-};
+import React, { useEffect, useState } from 'react';
+import CityCard from '../components/CityCard';
+import  fetchCities  from '../lib/fetchCities';
 
 export default function Favorites() {
+  const [cities, setCities] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const fetchedCities = await fetchCities();
+
+         // Sort cities in alphabetical order by name
+         const sortedCities = [...fetchedCities.data].sort((a, b) => a.name.localeCompare(b.name));
+         setCities(sortedCities || []);
+       } catch (error) {
+         console.error('Error fetching cities:', error);
+       }
+     };
+  
+    fetchData();
+  }, []);
+
   return (
-
-     <div>
-          <h2 className="text-brand-primary text-center text-3xl font-bold mt-4">Your Favorite Cities</h2>
-      
+    <div className="container mx-auto my-8">
+      <h2 className="text-brand-primary text-center text-4xl font-bold mt-4 mb-5">Your Favorite Cities</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 p-4 gridFav">
+        {cities.map((city) => (
+          <CityCard key={city.id} city={city} />
+        ))}
       </div>
-
+    </div>
   );
 }

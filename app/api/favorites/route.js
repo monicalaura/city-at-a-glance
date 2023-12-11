@@ -1,27 +1,39 @@
-// app/api/favorites/route.js
+// fetch city information from external APIs 
+
 import { NextResponse } from 'next/server';
-import connectDB from '@/app/lib/mongodb';
-import CityModel from '@/app/models/city'; 
+import dbConnect from '../../lib/mongodb';
+import CityModel from '../../models/city'; 
 import mongoose from "mongoose";
 
+// GET all favorite cities
+export async function GET(req) {
+  await dbConnect();
+  try {
+    const cities = await CityModel.find({});
+   return NextResponse.json({status: 200, data: cities, message:"Success" });
+  } catch (e) {
+    console.error(e);
+    return NextResponse.json({status: 401, message: 'cities search could not be performed.' });
+  }
+}
+
+//post favorite cities to db
 export async function POST(req) {
   const { name, image } = await req.json();
 
   try {
-    await connectDB();
+    await dbConnect();
 
-     // Check if the city already exists in the database
      const existingCity = await CityModel.findOne({ name });
-
+     
      if (existingCity) {
-       // City already exists, return a response indicating this to the user
+
        return NextResponse.json({
          msg: ["This city is already on the list of favorites"],
          success: false,
        });
      }
  
-
     const newCity = await CityModel.create({ name, image });
 
     console.log("City added to favorites:", newCity);

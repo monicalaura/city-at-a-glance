@@ -1,28 +1,15 @@
 'use client'
 
-import React, { useCallback, useState, useEffect } from "react";
+//city search page
+import React, { useCallback, useState } from "react";
 import HourlyWeather from "../components/HourlyWeather";
 import SearchInput from "../components/SearchInput";
 import Image from 'next/image';
 import Map from "../components/Map";  
-
-
-const categories = [
-  "Housing",
-  "Cost of Living",
-  "Safety",
-  "Healthcare",
-  "Education",
-  "Internet Access",
-  "Economy",
-  "Leisure & Culture",
-  "Tolerance",
-  "Outdoors",
-];
+import categories from '../data/categories';
 
 export default function City() {
-
-  
+    
   const [dailyData, setDailyData] = useState([]);
   const [hourlyData, setHourlyData] = useState([]);
   const [cityInfo, setCityInfo] = useState({});
@@ -37,7 +24,6 @@ export default function City() {
   const [error, setError] = useState([]);
   const [success, setSuccess] = useState(false);
 
-  
   const handleClick = useCallback((city) => {
     
 // Clear previous content
@@ -55,7 +41,6 @@ export default function City() {
   setError([]);
   setSuccess(false);
  
-
 
     const { latitude, longitude, timezone } = city;
 
@@ -216,7 +201,7 @@ export default function City() {
     <div className="w-full lg:w-4/5 p-5 overflow-x-hidden overflow-y-auto mx-auto">
       <SearchInput handleClick={handleClick} />
 
-      {/* Display City Image */}
+      {/* City image */}
       <div>
         {cityImage.length > 0 && (
           <>
@@ -240,7 +225,7 @@ export default function City() {
         {userTyped && cityImage.length === 0 && (
           <div className="max-w-lg mx-auto mt-5 generic">
             <Image
-              src="city-generic.svg"
+              src="/city-generic.svg"
               alt="Generic City Image"
               layout="responsive"
               width={1000}
@@ -251,18 +236,16 @@ export default function City() {
         )}
       </div>
 
-      {/* Display City Information */}
+      {/* Display city name & country */}
       {Object.keys(cityInfo).length > 0 && (
         <div className="text-brand-primary text-center">
           <h2 className=" font-bold text-brand-accent mt-5 mb-2 title">{cityInfo.name} - {cityInfo.country}</h2>
 
-           {/* Add City to Favorites */}
-          
+           {/* Add City to Favorites */}         
           <div className="mt-4">
             <button 
               className= "text-brand-primary p-2 rounded border border-brand-primary mb-4"
-              onClick={handleAddToFavorites}             
-            >
+              onClick={handleAddToFavorites}>
               Add to Favorites
             </button>
           </div>
@@ -279,24 +262,27 @@ export default function City() {
            {e}
       </div>
     ))}
-</div>
-
-          <div dangerouslySetInnerHTML={{ __html: summary }} className="w-full lg:w-4/5  overflow-x-hidden overflow-y-auto mx-auto max-w-lg lg:max-w-xl text-lg lg:text-xl mt-5 text-justify description"/>
-
+   </div>    
+            {/* Summary */}   
+          <div dangerouslySetInnerHTML={{ __html: summary }} className="w-full overflow-x-hidden overflow-y-auto mx-auto max-w-lg lg:max-w-xl text-lg lg:text-xl mt-5 text-justify summary"/>
+             {/* Timezone */}    
           <div className="info text-center mx-auto mt-5">
             <p className="text-md md:text-xl left"><span className="text-brand-accent uppercase mr-3 label">Timezone:</span>
               {cityInfo.timezone}</p>
+              {/* Population */}
             <p className="text-md md:text-xl mt-3 left1"><span className="text-brand-accent uppercase mr-3 label">Population:</span>
               {cityInfo.population} inhabitants</p>
+              {/* General Score */}
             <p className="text-md md:text-xl mt-3 left1"><span className="text-brand-accent uppercase mr-3 label">General Score:</span>
               { parseFloat(generalScore).toFixed(2)} / 100 </p>
+              {/* Elevation */}
             <p className="text-md md:text-xl mt-3 left2"><span className="text-brand-accent uppercase  mr-3 label">Elevation:</span>
               {cityInfo.elevation}  meters above sea level</p>
           </div>
         </div>
       )}
 
-{/* Display category select list and scores */}
+{/* Category select list and scores */}
 {userTyped && Object.keys(cityInfo).length > 0 && (
   <div className="mt-7 text-center scores">
     <p className="text-brand-primary mb-4 label text-md md:text-xl">
@@ -331,17 +317,15 @@ export default function City() {
     )}
   </div>
 )}
-
-
-      {/* Display weather information */}
+      {/* Weather info */}
       {hourlyData && hourlyData.length > 0 && (
-        <div className="mt-10 text-center">
+        <div className="mt-10 text-center p-7 mx-3 shadow-text-soft">
           <p className="text-brand-accent text-lg font-bold md:text-xl weather">7-DAY Weather Forecast for <span className = "ml-1 uppercase">{ cityInfo.name }</span></p>
           <HourlyWeather data={hourlyData} />
         </div>
       )}
 
-      {/* Display map */}
+      {/* Map */}
       {latitude && longitude && (
        <div className = "map mt-5 shadow-text-soft"> 
         <Map latitude={latitude} longitude={longitude} />

@@ -3,14 +3,10 @@
 ## Developer
 Monica Laura Burns
 
-## TO DO: 
-Show the cities that users have marked as favorites on the Favorites page.
-
 ## General Description
 City@AGlance is a user-friendly web application developed in Next.js and MongoDB, that provides comprehensive information about cities worldwide. 
 
 ![screenshot-city-app](https://github.com/monicalaura/city-at-a-glance/assets/58688612/748a225e-7469-41d9-972b-35c1caa22179)
-
 
 ## Key Features
 
@@ -20,8 +16,9 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 - **Timezone:** Know the timezone of the city for convenient planning.
 - **Population:** Get insights into the city's population, providing context to its size 
 - **Elevation:** Learn about the city's elevation above sea level.
-- **General Score 0/100:**    This gives users a quick take on how cool a city is to live in. 
+- **General Score 0/100:**  This gives users a quick take on how cool a city is to live in. 
                
+![Alt text](cit.PNG)
 
 ### Quality of Life Scores 0/10
 
@@ -36,24 +33,41 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 - Tolerance
 - Outdoors
 
+![Alt text](scores-1.PNG)
+
+NOTE: Data from the Teleport API is not available for some cities.
 
 ### Weather Forecast
 
 Access a 7-day weather forecast, complete with hourly breakdowns. 
 
+![Alt text](screenshot-city-weather-map-1.png)
+
 ### Interactive Map
 
-Visualize the city's location on an interactive map. Users can explore the surrounding areas and gain a spatial understanding of the city's geography.
+Users can visualize the city's location on the map.
+
+![Alt text](screenshot-city-weather-map.png)
 
 ### Favorites List
-
 Users can save cities to a personalized favorites list for quick access. 
 
 
+## ADDED FEATURES: 
+Favorite cities page, where the user can click on a single city page, or delete a city.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Alt text](fav-cities-capt.PNG)
+
+On the dedicated page for each favorite city, users can see the information about the selected city. Additionally, they have the option to submit a review, or edit/delete an existing review.
+
+![Alt text](fav-city-single.PNG)
+
+![Alt text](added-review.PNG)
+
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 

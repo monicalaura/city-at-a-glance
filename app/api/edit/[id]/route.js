@@ -1,0 +1,106 @@
+// api/edit/[id]/route.js
+
+import { NextResponse } from 'next/server';
+import dbConnect from '../../../lib/mongodb';
+import Review from '../../../models/review';
+
+
+//Find a review by id
+
+export async function GET(request, { params: { id } }) {
+  try {
+    // Connect to the DB
+    await dbConnect();
+    //get the data using the model
+    const review = await Review.findOne({ _id: id });
+    return NextResponse.json(
+      {
+        message: "Ok",
+        data: review,
+      },
+      { status: 200 }
+    );
+  } catch (error) {
+    return NextResponse.json(
+      {
+        message: "Failed to fetch the review",
+        error,
+      },
+      {
+        status: 500,
+      }
+    );
+  }
+}
+
+//EDIT a review
+export async function PUT(request, { params: { id } }) {
+
+  try {
+    const {newText: text} = await request.json();
+    const newReview = {text};
+
+    // Connect to the DB
+    await dbConnect();
+
+    await Review.findByIdAndUpdate(id, newReview);
+    return NextResponse.json(
+      {
+        message: "Review updated successfully",
+        data: newReview,
+      },
+      { status: 201 }
+    );
+
+  } catch (error) {
+    return NextResponse.json({
+      message: 'Failed to update review',
+      error: error.message,
+    }, {
+      status: 500,
+    });
+  }
+}
+
+// DELETE A REVIEW
+export async function DELETE(request, { params: { id } }) {
+  try {
+    // Check if id is valid before proceeding
+    if (!id) {
+      return NextResponse.json({
+        message: 'Invalid review ID',
+      }, {
+        status: 400,
+      });
+    }
+
+    // Connect to the DB
+    await dbConnect();
+
+    // Use the model to delete
+    const result = await Review.findByIdAndDelete(id);
+
+    if (!result) {
+      return NextResponse.json({
+        message: 'Review not found',
+      }, {
+        status: 404,
+      });
+    }    
+
+    return NextResponse.json({
+      message: 'Review deleted successfully',
+    }, {
+      status: 200,
+    });
+  } catch (error) {
+    return NextResponse.json({
+      message: 'Failed to delete a review',
+      error: error.message,
+    }, {
+      status: 500,
+    });
+  }
+}
+
+
