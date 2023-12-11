@@ -27,7 +27,11 @@ export async function POST(req) {
      const existingCity = await CityModel.findOne({ name });
      
      if (existingCity) {
+<<<<<<< HEAD
 
+=======
+       // City already exists, return a response 
+>>>>>>> 765189d728cf25fea5df98896c1b94d580923173
        return NextResponse.json({
          msg: ["This city is already on the list of favorites"],
          success: false,

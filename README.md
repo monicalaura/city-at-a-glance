@@ -1,6 +1,6 @@
 # City@AGlance (work in progress)
 
-## Developer
+## Developed by:
 Monica Laura Burns
 
 ## General Description
@@ -12,11 +12,11 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 
 ### City Information
 
-- **Country:** Discover the country to which the city belongs.
-- **Timezone:** Know the timezone of the city for convenient planning.
-- **Population:** Get insights into the city's population, providing context to its size 
-- **Elevation:** Learn about the city's elevation above sea level.
-- **General Score 0/100:**  This gives users a quick take on how cool a city is to live in. 
+- **Country:** The country to which the city belongs.
+- **Timezone:** The timezone of the city.
+- **Population:** The size of the city's population.
+- **Elevation:** The city's elevation above sea level.
+- **General Score 0/100:** A quick take on how cool a city is to live in. 
                
 ![Alt text](cit.PNG)
 
@@ -33,9 +33,6 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 - Tolerance
 - Outdoors
 
-![Alt text](scores-1.PNG)
-
-NOTE: Data from the Teleport API is not available for some cities.
 
 ### Weather Forecast
 
@@ -69,7 +66,7 @@ On the dedicated page for each favorite city, users can see the information abou
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
