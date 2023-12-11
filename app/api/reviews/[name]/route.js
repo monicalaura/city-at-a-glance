@@ -1,4 +1,4 @@
-// pages/api/reviews/route.js
+//api/reviews/route.js
 
 import { NextResponse } from 'next/server';
 import dbConnect from '../../../lib/mongodb';
