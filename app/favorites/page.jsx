@@ -1,5 +1,6 @@
 'use client'
 
+//favorite cities page
 import React, { useEffect, useState } from 'react';
 import CityCard from '../components/CityCard';
 import  fetchCities  from '../lib/fetchCities';
