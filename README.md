@@ -18,7 +18,8 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 - **Elevation:** The city's elevation above sea level.
 - **General Score 0/100:** A quick take on how cool a city is to live in. 
                
-![Alt text](cit.PNG)
+![cit](https://github.com/monicalaura/city-at-a-glance/assets/58688612/1f6b736f-5837-4cd9-aad8-99569c152be9)
+
 
 ### Quality of Life Scores 0/10
 
