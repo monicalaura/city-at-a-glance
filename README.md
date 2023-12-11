@@ -59,12 +59,16 @@ Favorite cities page, where the user can click on a single city page, or delete 
 
 ![fav-cities-capt](https://github.com/monicalaura/city-at-a-glance/assets/58688612/c545020a-4eb9-4459-8834-7b11db113f17)
 
-On the dedicated page for each favorite city, users can see the information about the selected city. Additionally, they have the option to submit a review, or edit/delete an existing review.
+On the dedicated page for each favorite city, users can see the information about the selected city. Additionally, they have the option to submit a review or edit/delete an existing review.
 
 ![fav-city-single](https://github.com/monicalaura/city-at-a-glance/assets/58688612/5a4c4ae8-3eae-4d9e-8cae-b7041e9d092d)
 
 ![added-review](https://github.com/monicalaura/city-at-a-glance/assets/58688612/508c222f-01de-492b-b41f-cdcbbaa4a4fa)
 
+## TO DO:
+
+A list with a maximum of 5 favorite cities.
+A list with 5 random cities.
 
 ## Getting Started
 
