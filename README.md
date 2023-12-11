@@ -43,13 +43,12 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 
 Access a 7-day weather forecast, complete with hourly breakdowns. 
 
-![Alt text](screenshot-city-weather-map-1.png)
-
 ### Interactive Map
 
 Users can visualize the city's location on the map.
 
-![Alt text](screenshot-city-weather-map.png)
+
+![screenshot-city-weather-map](https://github.com/monicalaura/city-at-a-glance/assets/58688612/43647910-2df9-4ba6-aea6-d907ae554339)
 
 ### Favorites List
 Users can save cities to a personalized favorites list for quick access. 
@@ -58,13 +57,13 @@ Users can save cities to a personalized favorites list for quick access.
 ## ADDED FEATURES: 
 Favorite cities page, where the user can click on a single city page, or delete a city.
 
-![Alt text](fav-cities-capt.PNG)
+![fav-cities-capt](https://github.com/monicalaura/city-at-a-glance/assets/58688612/c545020a-4eb9-4459-8834-7b11db113f17)
 
 On the dedicated page for each favorite city, users can see the information about the selected city. Additionally, they have the option to submit a review, or edit/delete an existing review.
 
-![Alt text](fav-city-single.PNG)
+![fav-city-single](https://github.com/monicalaura/city-at-a-glance/assets/58688612/5a4c4ae8-3eae-4d9e-8cae-b7041e9d092d)
 
-![Alt text](added-review.PNG)
+![added-review](https://github.com/monicalaura/city-at-a-glance/assets/58688612/508c222f-01de-492b-b41f-cdcbbaa4a4fa)
 
 
 ## Getting Started
