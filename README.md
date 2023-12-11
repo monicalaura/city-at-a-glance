@@ -1,4 +1,4 @@
-# City@AGlance (work in progress)
+# City@AGlance
 
 ## Developed by:
 Monica Laura Burns
