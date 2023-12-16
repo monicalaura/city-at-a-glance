@@ -19,7 +19,7 @@ export default function DeleteCity({ id }) {
         if (response.ok) {
           alert("City deleted successfully");
           
-          router.refresh()
+          window.location.reload();
           router.push("/favorites");
         } else {
           console.error("Failed to delete city");
