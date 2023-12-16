@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link';
+import HomeCities from './components/HomeCities';
 
 
 export default function Home() {
@@ -33,6 +34,8 @@ export default function Home() {
           />
         </div>
       </div>
+   {/* HomeCities component */}
+   <HomeCities />
     </div>
   );
 }
