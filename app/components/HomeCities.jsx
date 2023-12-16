@@ -1,6 +1,6 @@
 'use client'
 
-//5 latest favorite cities & 5 random cities
+//6 latest favorite cities & 5 random cities
 import React, { useEffect, useState } from 'react';
 import CityCard from './CityCard';
 import fetchCities  from '../lib/fetchCities';
@@ -43,23 +43,27 @@ export default function HomeCities() {
       fetchRandomCitiesList();
     }, []);
   
-    return (
-      <div className="container mx-auto my-8">
-        <h2 className="text-brand-primary text-center text-4xl font-bold mt-4 mb-5">Latest Favorite Cities</h2>
-        {/* Display the 6 most recent favorite cities */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 p-4 gridFav">
-          {favoriteCities.map((city) => (
-            <CityCard key={city.id} city={city} />
-          ))}
-        </div>
+    const hasFavoriteCities = favoriteCities.length > 0;
   
-        {/* Display 6 different random cities */}
-        <h2 className="text-brand-primary text-center text-4xl font-bold mt-8 mb-5">Random Cities</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 p-4 gridFav">
-          {randomCities.map((city) => (
-            <CityCard key={city.id} city={city} />
-          ))}
-        </div>
-      </div>
-    );
-  };
+    return (
+      <div className="container mx-auto my-8">        
+        {hasFavoriteCities && (
+        <>
+          <h2 className="text-brand-primary text-center text-4xl font-bold mt-4 mb-5">Latest Favorite Cities</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 p-4 gridFav">
+            {favoriteCities.map((city) => (
+              <CityCard key={city.id} city={city} />
+            ))}
+          </div>
+
+          <h2 className="text-brand-primary text-center text-4xl font-bold mt-8 mb-5">Random Cities</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 p-4 gridFav">
+            {randomCities.map((city) => (
+              <CityCard key={city.id} city={city} />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
