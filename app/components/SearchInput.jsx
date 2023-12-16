@@ -45,6 +45,7 @@ export default function SearchInput({ className, handleClick, ...other }) {
     setCity(city.name);
     setShow(false);
     setToggle(true);
+    setValue("");
     
   }
 
