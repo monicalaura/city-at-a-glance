@@ -32,7 +32,7 @@ export default function HomeCities() {
     } catch (error) {
       console.error('Error fetching random cities:', error);
     } finally {
-      setLoading(false); // Set loading to false after fetching random cities
+      setLoading(false); 
     }
   };
 
