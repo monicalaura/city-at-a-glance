@@ -36,7 +36,7 @@ export default function Favorites() {
           You have no favorite cities yet
         </p>
       )}
-        {loading && cities.length > 0 && <p className='text-center mt-7'>Loading...</p>}
+        {loading && <p className='text-center mt-7'>Loading...</p>}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 p-4 gridFav">
         {cities.map((city) => (
           <CityCard key={city.id} city={city} />
