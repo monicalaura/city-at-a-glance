@@ -8,6 +8,14 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 
 ![screenshot-city-app](https://github.com/monicalaura/city-at-a-glance/assets/58688612/748a225e-7469-41d9-972b-35c1caa22179)
 
+## ADDED:
+
+A list with 3 most recent favorite cities.
+A list with 3 random cities.
+
+![latest](https://github.com/monicalaura/city-at-a-glance/assets/58688612/e6232a9e-7552-4a31-a8f8-5c07a212270d)
+
+
 ## Key Features
 
 ### City Information
@@ -65,10 +73,6 @@ On the dedicated page for each favorite city, users can see the information abou
 
 ![added-review](https://github.com/monicalaura/city-at-a-glance/assets/58688612/508c222f-01de-492b-b41f-cdcbbaa4a4fa)
 
-## TO DO:
-
-A list with a maximum of 5 favorite cities.
-A list with 5 random cities.
 
 ## Getting Started
 
