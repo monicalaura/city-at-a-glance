@@ -66,8 +66,7 @@ On the dedicated page for each favorite city, users can see the information abou
 
 ![added-review](https://github.com/monicalaura/city-at-a-glance/assets/58688612/508c222f-01de-492b-b41f-cdcbbaa4a4fa)
 
-A list with 3 most recent favorite cities.
-A list with 3 random cities.
+A list with 3 most recent favorite cities & a list with 3 random cities.
 
 ![latest](https://github.com/monicalaura/city-at-a-glance/assets/58688612/e6232a9e-7552-4a31-a8f8-5c07a212270d)
 
