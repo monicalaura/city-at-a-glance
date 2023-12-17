@@ -1,81 +1,47 @@
 'use client'
+
+//favorite cities page
 import React, { useEffect, useState } from 'react';
-import CityCard from './CityCard';
-import fetchCities from '../lib/fetchCities';
+import CityCard from '../components/CityCard';
+import  fetchCities  from '../lib/fetchCities';
 
-export default function HomeCities() {
-  const [favoriteCities, setFavoriteCities] = useState([]);
-  const [randomCities, setRandomCities] = useState([]);
+export default function Favorites() {
+  const [cities, setCities] = useState([]);
   const [loading, setLoading] = useState(true);
-
-  const fetchFavoriteCitiesList = async () => {
-    try {
-      const fetchedFavoriteCities = await fetchCities();
-      const sortedFavoriteCities = [...fetchedFavoriteCities.data]
-        .sort((a, b) => b._id.localeCompare(a._id))
-        .slice(0, 6);
-
-      setFavoriteCities(sortedFavoriteCities || []);
-    } catch (error) {
-      console.error('Error fetching favorite cities:', error);
-    }
-  };
-
-  const fetchRandomCitiesList = async () => {
-    try {
-      const fetchedRandomCities = await fetchCities();
-      const uniqueRandomCities = Array.from(new Set(fetchedRandomCities.data))
-        .sort(() => Math.random() - 0.6)
-        .slice(0, 6);
-
-      setRandomCities(uniqueRandomCities || []);
-    } catch (error) {
-      console.error('Error fetching random cities:', error);
-    } finally {
-      setLoading(false); 
-    }
-  };
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setLoading(true);
+        const fetchedCities = await fetchCities();
 
-        await fetchFavoriteCitiesList();
-        await fetchRandomCitiesList();
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      } finally {
-        setLoading(false);
+         // Sort cities in alphabetical order by name
+         const sortedCities = [...fetchedCities.data].sort((a, b) => a.name.localeCompare(b.name));
+         setCities(sortedCities || []);
+       } catch (error) {
+         console.error('Error fetching cities:', error);
+       }
+       finally {
+        setLoading(false); 
       }
-    };
-
+     };
+  
     fetchData();
   }, []);
 
-  const hasFavoriteCities = favoriteCities.length > 0;
-
   return (
     <div className="container mx-auto my-8">
-      {loading && <p>Loading...</p>}
-
-      {hasFavoriteCities && (
-        <>
-          <h2 className="text-brand-primary text-center text-4xl font-bold mt-4 mb-5">Latest Favorite Cities</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 p-4 gridFav">
-            {favoriteCities.map((city) => (
-              <CityCard key={city.id} city={city} />
-            ))}
-          </div>
-
-          <h2 className="text-brand-primary text-center text-4xl font-bold mt-8 mb-5">Random Cities</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 p-4 gridFav">
-            {randomCities.map((city) => (
-              <CityCard key={city.id} city={city} />
-            ))}
-          </div>
-        </>
+      <h2 className="text-brand-primary text-center text-4xl font-bold mt-4 mb-5">Your Favorite Cities</h2>
+      {cities.length === 0 && (
+        <p className='text-center text-lg'>
+          You have no favorite cities yet
+        </p>
       )}
+        {loading && <p className='text-center mt-7'>Loading...</p>}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 p-4 gridFav">
+        {cities.map((city) => (
+          <CityCard key={city.id} city={city} />
+        ))}
+      </div>
     </div>
   );
 }
