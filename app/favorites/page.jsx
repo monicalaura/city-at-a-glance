@@ -31,7 +31,7 @@ export default function Favorites() {
   return (
     <div className="container mx-auto my-8">
       <h2 className="text-brand-primary text-center text-4xl font-bold mt-4 mb-5">Your Favorite Cities</h2>
-      {cities.length === 0 && (
+    {!loading && cities.length === 0 && (
         <p className='text-center text-lg'>
           You have no favorite cities yet
         </p>
