@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+/* CUSTOM CSS */
+
+.generic {
+  margin-top: 2em
+}
+
+.logo-mob {
+  position:absolute;
+  left: 40%;
+  top: 0.7em;
+  font-size:0.8em;
+  text-align: center;
+}
+
+.head-text {
+  margin-top: -1em;
+}
+
+.left,
+.left1,
+.left2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px; 
+}
+.info {
+  margin-top: 2em;
+}
+
+.title {
+  font-size: 1.7em
+}
+
+.label {
+font-weight: bold;
+}
+.scores {
+  margin-bottom:2em
+}
+p.weather {
+  font-size: 1.3em !important;
+  margin-top:0.7em
+}
+
+#map {
+  margin-top: 3em;
+}
+
+.favCard {
+  height: auto
+}
+
+.gridFav {
+  margin-top: 3em;
+}
+
+.favHeading {
+  margin-top:1.8em;
+  margin-bottom: 1em;
+}
+
+.favCity {
+  text-transform: uppercase;
+}
+
+.favName {
+  text-transform: uppercase;
+  font-size: 1.6em;
+  text-align: center;
+  padding-bottom:0.9em;
+  padding-top:0.3em
+}
+
+.page-link {
+  font-size: 1em;
+}
+
+.info-heading {
+  text-transform: uppercase;
+  margin-top: 3em;
+}
+
+.textarea {
+  width:100%
+}
+
+.ol-overlay-container .marker {
+  cursor: pointer;
+}
+
+.chat {
+ margin:auto
+}
+
+.chatArea {
+  margin: 0 auto;
+}
+.chatBox {
+  border: 1px solid #cecbcb;
+}
+
+.chat h2.titleChat {
+  text-align: center;
+}
+
+.chatBtn {
+  width:60px;
+}
+
+.chatIcon{
+  margin:0 auto;
+}
+
+
+/* Media query for larger screens (desktop) */
+@media (min-width: 1024px) {
+
+  .head-text {
+    margin-top: 2em;
+  }
+  
+  #teleport-widget-container{
+    margin-left: 6.5em;
+  }
+
+  p.weather {
+    font-size: 1.7em !important;
+    margin-top:1em
+  }
+
+  .title {
+    margin-top: 1.5em;
+    margin-bottom:0.4em;
+    font-size:3em !important;
+  }
+
+  .summary {
+    padding: 1em
+  }
+
+  .description {
+    margin-bottom: 1.5em;
+    padding-right: 7em;
+    padding-left: 7em;
+  }
+
+  .edit-form {
+    padding-right: 7em;
+    padding-left: 7em;
+  }
+
+  .btn-edit {
+    width: 50em
+  }
+
+  .textarea {
+    width:50em 
+  }
+  
+}
+
