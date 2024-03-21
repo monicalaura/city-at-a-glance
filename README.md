@@ -10,7 +10,7 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 
 ![screenshot-city-app](https://github.com/monicalaura/city-at-a-glance/assets/58688612/748a225e-7469-41d9-972b-35c1caa22179)
 
-Open in [https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.app/] to see the application live.
+Open [https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.app/] in your browser to see the application live.
 
 ## Key Features
 
@@ -20,28 +20,19 @@ Open in [https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.a
 - **Timezone:** The timezone of the city.
 - **Population:** The size of the city's population.
 - **Elevation:** The city's elevation above sea level.
-- **General Score 0/100:** A quick take on how cool a city is to live in.
-
-![cit](https://github.com/monicalaura/city-at-a-glance/assets/58688612/578b7ed1-e405-44a1-97f2-3495cd317a58)
-
-### Quality of Life Scores 0/10
-
-- Housing
-- Cost of Living
-- Safety
-- Healthcare
-- Education
-- Internet Access
-- Economy
-- Leisure & Culture
-- Tolerance
-- Outdoors
-
-![scores](https://github.com/monicalaura/city-at-a-glance/assets/58688612/a6306a36-bed7-4fef-9dad-5675c9fa0bb0)
 
 ### Weather Forecast
 
 Access a 7-day weather forecast, complete with hourly breakdowns.
+
+
+![Screenshot 2024-03-18 164802](https://github.com/monicalaura/city-at-a-glance/assets/58688612/2f8f5dc9-05a8-4e5c-99b7-ee4472cef785)
+
+### Chat Bot
+
+A comprehensive city guide chatbot, powered by OpenAI.
+
+![Screenshot 2024-03-18 164632](https://github.com/monicalaura/city-at-a-glance/assets/58688612/cf879ae9-792b-424f-8fa1-042dee72631f)
 
 ### Interactive Map
 
@@ -61,13 +52,7 @@ Favorite cities page, where the user can click on a single city page, or delete 
 
 On the dedicated page for each favorite city, users can see the information about the selected city. Additionally, they have the option to submit a review or edit/delete an existing review.
 
-![fav-city-single](https://github.com/monicalaura/city-at-a-glance/assets/58688612/5a4c4ae8-3eae-4d9e-8cae-b7041e9d092d)
-
-![added-review](https://github.com/monicalaura/city-at-a-glance/assets/58688612/508c222f-01de-492b-b41f-cdcbbaa4a4fa)
-
 A list with 3 most recent favorite cities & a list with 3 random cities.
-
-![latest](https://github.com/monicalaura/city-at-a-glance/assets/58688612/e6232a9e-7552-4a31-a8f8-5c07a212270d)
 
 ## Getting Started
 
