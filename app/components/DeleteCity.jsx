@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import React from "react";
-import { FaTrash } from 'react-icons/fa';
+import { FaTrash } from "react-icons/fa";
 
 export default function DeleteCity({ id }) {
   const router = useRouter();
@@ -12,13 +12,16 @@ export default function DeleteCity({ id }) {
     if (confirmed) {
       try {
         console.log(`Deleting city with ID: ${id}`);
-        const response = await fetch(`http://localhost:3000/api/del-city/${id}`, {
-          method: "DELETE",
-        });
+        const response = await fetch(
+          `https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.app/api/del-city/${id}`,
+          {
+            method: "DELETE",
+          }
+        );
 
         if (response.ok) {
           alert("City deleted successfully");
-          
+
           window.location.reload();
           router.push("/favorites");
         } else {
@@ -32,10 +35,10 @@ export default function DeleteCity({ id }) {
 
   return (
     <button
-    onClick={handleDeleteCity}
-    className="bg-brand-accent text-white p-2 rounded-md hover:bg-brand-primary transition-all duration-300">
-    <FaTrash className="text-sm"  /> 
-</button>
-
+      onClick={handleDeleteCity}
+      className="bg-brand-accent text-white p-2 rounded-md hover:bg-brand-primary transition-all duration-300"
+    >
+      <FaTrash className="text-sm" />
+    </button>
   );
 }

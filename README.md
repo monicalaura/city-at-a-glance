@@ -1,13 +1,16 @@
 # City@AGlance
 
 ## Developed by:
+
 Monica Laura Burns
 
 ## General Description
-City@AGlance is a user-friendly web application developed in Next.js and MongoDB, that provides comprehensive information about cities worldwide. 
+
+City@AGlance is a user-friendly web application developed in Next.js and MongoDB, that provides comprehensive information about cities worldwide.
 
 ![screenshot-city-app](https://github.com/monicalaura/city-at-a-glance/assets/58688612/748a225e-7469-41d9-972b-35c1caa22179)
 
+Open in [https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.app/] to see the application live.
 
 ## Key Features
 
@@ -17,11 +20,9 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 - **Timezone:** The timezone of the city.
 - **Population:** The size of the city's population.
 - **Elevation:** The city's elevation above sea level.
-- **General Score 0/100:** A quick take on how cool a city is to live in. 
-               
+- **General Score 0/100:** A quick take on how cool a city is to live in.
 
 ![cit](https://github.com/monicalaura/city-at-a-glance/assets/58688612/578b7ed1-e405-44a1-97f2-3495cd317a58)
-
 
 ### Quality of Life Scores 0/10
 
@@ -36,26 +37,24 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 - Tolerance
 - Outdoors
 
-
 ![scores](https://github.com/monicalaura/city-at-a-glance/assets/58688612/a6306a36-bed7-4fef-9dad-5675c9fa0bb0)
-
 
 ### Weather Forecast
 
-Access a 7-day weather forecast, complete with hourly breakdowns. 
+Access a 7-day weather forecast, complete with hourly breakdowns.
 
 ### Interactive Map
 
 Users can visualize the city's location on the map.
 
-
 ![screenshot-city-weather-map](https://github.com/monicalaura/city-at-a-glance/assets/58688612/43647910-2df9-4ba6-aea6-d907ae554339)
 
 ### Favorites List
-Users can save cities to a personalized favorites list for quick access. 
 
+Users can save cities to a personalized favorites list for quick access.
 
-## ADDED FEATURES: 
+## ADDED FEATURES:
+
 Favorite cities page, where the user can click on a single city page, or delete a city.
 
 ![fav-cities-capt](https://github.com/monicalaura/city-at-a-glance/assets/58688612/c545020a-4eb9-4459-8834-7b11db113f17)
@@ -69,7 +68,6 @@ On the dedicated page for each favorite city, users can see the information abou
 A list with 3 most recent favorite cities & a list with 3 random cities.
 
 ![latest](https://github.com/monicalaura/city-at-a-glance/assets/58688612/e6232a9e-7552-4a31-a8f8-5c07a212270d)
-
 
 ## Getting Started
 

@@ -2,9 +2,12 @@
 
 export default async function getSingleReview(id) {
   try {
-    const response = await fetch(`http://localhost:3000/api/edit/${id}`, {
-      cache: "no-store",
-    });
+    const response = await fetch(
+      `https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.app/api/edit/${id}`,
+      {
+        cache: "no-store",
+      }
+    );
     const review = await response.json();
     return review.data;
   } catch (error) {

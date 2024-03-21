@@ -11,9 +11,12 @@ export default function DeleteReview({ id }) {
     const confirmed = confirm("Are you sure you want to delete this review?");
     if (confirmed) {
       console.log(`Deleting review with ID: ${id}`);
-      await fetch(`../api/edit/${id}`, {
-        method: "DELETE",
-      });
+      await fetch(
+        `https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.app/api/edit/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
       alert("Review deleted successfully");
       router.push("/favorites");
       router.refresh();
