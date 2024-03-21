@@ -12,7 +12,7 @@ export default function EditForm({ review }) {
     const newReview = { newText };
 
     const response = await fetch(
-      `https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.app/api/edit/${review._id}`,
+      `https://city-at-a-glance.vercel.app/api/edit/${review._id}`,
       {
         method: "PUT",
         headers: {

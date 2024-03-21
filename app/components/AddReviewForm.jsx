@@ -25,7 +25,7 @@ export default function AddReviewForm({ cityName }) {
 
     try {
       const response = await fetch(
-        `https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.app/api/reviews/${encodeURIComponent(
+        `https://city-at-a-glance.vercel.app/api/reviews/${encodeURIComponent(
           cityName
         )}`,
         {
