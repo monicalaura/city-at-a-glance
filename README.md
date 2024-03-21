@@ -10,7 +10,7 @@ City@AGlance is a user-friendly web application developed in Next.js and MongoDB
 
 ![screenshot-city-app](https://github.com/monicalaura/city-at-a-glance/assets/58688612/748a225e-7469-41d9-972b-35c1caa22179)
 
-Open in [https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.app/] to see the application live.
+Open [https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.app/] in your browser to see the application live.
 
 ## Key Features
 
@@ -20,28 +20,19 @@ Open in [https://city-at-a-glance-aylb0vcvd-monica-laura-burns-projects.vercel.a
 - **Timezone:** The timezone of the city.
 - **Population:** The size of the city's population.
 - **Elevation:** The city's elevation above sea level.
-- **General Score 0/100:** A quick take on how cool a city is to live in.
-
-![cit](https://github.com/monicalaura/city-at-a-glance/assets/58688612/578b7ed1-e405-44a1-97f2-3495cd317a58)
-
-### Quality of Life Scores 0/10
-
-- Housing
-- Cost of Living
-- Safety
-- Healthcare
-- Education
-- Internet Access
-- Economy
-- Leisure & Culture
-- Tolerance
-- Outdoors
-
-![scores](https://github.com/monicalaura/city-at-a-glance/assets/58688612/a6306a36-bed7-4fef-9dad-5675c9fa0bb0)
 
 ### Weather Forecast
 
 Access a 7-day weather forecast, complete with hourly breakdowns.
+
+
+![Screenshot 2024-03-18 164802](https://github.com/monicalaura/city-at-a-glance/assets/58688612/2f8f5dc9-05a8-4e5c-99b7-ee4472cef785)
+
+### Chat Bot
+
+A comprehensive city guide chatbot, powered by OpenAI.
+
+![Screenshot 2024-03-18 164632](https://github.com/monicalaura/city-at-a-glance/assets/58688612/cf879ae9-792b-424f-8fa1-042dee72631f)
 
 ### Interactive Map
 
